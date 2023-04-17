@@ -121,14 +121,6 @@ function attachEvents() {
             e.preventDefault();
         }
 
-        const options = {
-            method: "PATCH",
-            headers: {
-                "Content-type": "application/json",
-            },
-            body: JSON.stringify({ status }),
-        };
-
         if (e.target.textContent === "Move to In Progress") {
             let status = "In Progress";
             const options = {
